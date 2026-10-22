@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="pnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0e1523"/>
+    </linearGradient>
+    <linearGradient id="pnCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141f33"/>
+      <stop offset="100%" stop-color="#0b111d"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#pnBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0b111f" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="35" cy="30" r="14" fill="#0ea5e9"/>
+  <text x="35" y="35" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" fill="#080c14" text-anchor="middle">PN</text>
+  <text x="60" y="37" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#f8fafc">ProfinetForge <tspan fill="#2dd4bf">Pro</tspan></text>
+  <text x="235" y="37" font-family="monospace" font-size="11" fill="#64748b">v1.0.0 [IEC 61158 / IEC 61784]</text>
+
+  <!-- Nav Tabs -->
+  <g transform="translate(500, 16)">
+    <rect x="0" y="0" width="130" height="30" rx="6" fill="#0ea5e9"/>
+    <text x="65" y="20" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#080c14" text-anchor="middle">Cyclic RT/IRT</text>
+
+    <rect x="140" y="0" width="120" height="30" rx="6" fill="#1e293b"/>
+    <text x="200" y="20" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">DCP Scanner</text>
+
+    <rect x="270" y="0" width="130" height="30" rx="6" fill="#1e293b"/>
+    <text x="335" y="20" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">PLC Process</text>
+
+    <rect x="410" y="0" width="130" height="30" rx="6" fill="#1e293b"/>
+    <text x="475" y="20" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">IEC 62443 Audit</text>
+
+    <rect x="550" y="0" width="130" height="30" rx="6" fill="#1e293b"/>
+    <text x="615" y="20" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">Gateway Rules</text>
+  </g>
+
+  <!-- Hero Banner -->
+  <rect x="30" y="80" width="1140" height="85" rx="10" fill="url(#pnCard)" stroke="#1e293b" stroke-width="1"/>
+  <text x="60" y="115" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Industrial Real-Time Process Fieldbus Studio &amp; Conformance Platform</text>
+  <text x="60" y="142" font-family="-apple-system, sans-serif" font-size="13" fill="#94a3b8">PROFINET IO / IRT Frame Codec (EtherType 0x8892), DCP Discovery Scanner, APDU Status Engine &amp; PLC Process Studio.</text>
+
+  <!-- Left Column: Frame Generator -->
+  <rect x="30" y="180" width="550" height="420" rx="10" fill="url(#pnCard)" stroke="#1e293b" stroke-width="1"/>
+  <text x="50" y="215" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">PROFINET Cyclic RT/IRT Frame Configuration</text>
+
+  <!-- Preset Buttons -->
+  <g transform="translate(50, 235)">
+    <rect x="0" y="0" width="125" height="26" rx="4" fill="#0284c7"/>
+    <text x="62" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">Cyclic RT (0x8000)</text>
+
+    <rect x="135" y="0" width="130" height="26" rx="4" fill="#0d9488"/>
+    <text x="200" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">IRT Motion (0x0100)</text>
+
+    <rect x="275" y="0" width="125" height="26" rx="4" fill="#334155"/>
+    <text x="337" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#e2e8f0" text-anchor="middle">DCP Identify (0xFEFF)</text>
+
+    <rect x="410" y="0" width="100" height="26" rx="4" fill="#e11d48"/>
+    <text x="460" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">Simulate STOP Fault</text>
+  </g>
+
+  <!-- Input Form Fields -->
+  <g transform="translate(50, 280)" font-family="-apple-system, sans-serif" font-size="12" fill="#cbd5e1">
+    <text x="0" y="15">Frame ID (16-bit Hex)</text>
+    <rect x="0" y="25" width="240" height="32" rx="4" fill="#080c14" stroke="#334155"/>
+    <text x="15" y="46" font-family="monospace" font-size="12" fill="#38bdf8">0x8000 (PROFINET_RT_CYCLIC)</text>
+
+    <text x="265" y="15">Cycle Counter (16-bit Modulo 65536)</text>
+    <rect x="265" y="25" width="240" height="32" rx="4" fill="#080c14" stroke="#334155"/>
+    <text x="280" y="46" font-family="monospace" font-size="12" fill="#f8fafc">1024 (0x0400)</text>
+
+    <text x="0" y="85">Controller Mode (DataStatus)</text>
+    <rect x="0" y="95" width="240" height="32" rx="4" fill="#080c14" stroke="#334155"/>
+    <text x="15" y="116" font-family="monospace" font-size="12" fill="#2dd4bf">PLC RUN Mode (Bit 3 = 1)</text>
+
+    <text x="265" y="85">IEEE 802.1Q VLAN Tag</text>
+    <rect x="265" y="95" width="240" height="32" rx="4" fill="#080c14" stroke="#334155"/>
+    <text x="280" y="116" font-family="monospace" font-size="12" fill="#f8fafc">Untagged / Standard RT</text>
+
+    <text x="0" y="155">Cyclic IO Process Payload (16 Bytes)</text>
+    <rect x="0" y="165" width="505" height="42" rx="4" fill="#080c14" stroke="#334155"/>
+    <text x="15" y="191" font-family="monospace" font-size="12" fill="#38bdf8">01 C4 02 AD 4E 0E 05 AA 80 80 00 00 00 00 00 00</text>
+  </g>
+
+  <!-- Right Column: APDU Status & Wire Dissection -->
+  <rect x="610" y="180" width="560" height="420" rx="10" fill="url(#pnCard)" stroke="#1e293b" stroke-width="1"/>
+  <text x="630" y="215" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">APDU Status &amp; Wire Dissector</text>
+
+  <!-- APDU Status Cards -->
+  <g transform="translate(630, 235)">
+    <!-- DataStatus Byte -->
+    <rect x="0" y="0" width="250" height="85" rx="8" fill="#08101f" stroke="#0284c7" stroke-width="1"/>
+    <text x="15" y="25" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#94a3b8">DATASTATUS BYTE (0x35)</text>
+    <text x="15" y="58" font-family="monospace" font-size="28" font-weight="800" fill="#38bdf8">0x35</text>
+    <text x="15" y="75" font-family="-apple-system, sans-serif" font-size="10" fill="#10b981">● PRIMARY | RUN | VALID</text>
+
+    <!-- TransferStatus Byte -->
+    <rect x="270" y="0" width="250" height="85" rx="8" fill="#08101f" stroke="#0d9488" stroke-width="1"/>
+    <text x="285" y="25" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#94a3b8">TRANSFERSTATUS (0x00)</text>
+    <text x="285" y="58" font-family="monospace" font-size="28" font-weight="800" fill="#2dd4bf">0x00</text>
+    <text x="285" y="75" font-family="-apple-system, sans-serif" font-size="10" fill="#10b981">● TRANSMISSION OK</text>
+
+    <!-- Wire Representation -->
+    <rect x="0" y="100" width="520" height="60" rx="8" fill="#080c14" stroke="#1e293b"/>
+    <text x="15" y="122" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748b">ETHERNET II ETHERTYPE 0x8892 WIRE BYTES</text>
+    <text x="15" y="145" font-family="monospace" font-size="13" font-weight="700" fill="#fbbf24">01 0E CF 00 00 00 00 1E 67 A2 B4 01 88 92 80 00 ...</text>
+
+    <!-- Process Telemetry Decoded Preview -->
+    <rect x="0" y="175" width="520" height="95" rx="8" fill="#080c14" stroke="#1e293b"/>
+    <text x="15" y="197" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#a855f7">INDUSTRIAL PROCESS TELEMETRY (DECODED)</text>
+    <text x="15" y="222" font-family="-apple-system, sans-serif" font-size="13" fill="#f8fafc">Temp: <tspan font-family="monospace" font-weight="700" fill="#38bdf8">45.2 °C</tspan> | Pressure: <tspan font-family="monospace" font-weight="700" fill="#10b981">6.85 Bar</tspan> | Tank: <tspan font-family="monospace" fill="#fbbf24">78%</tspan></text>
+    <text x="15" y="245" font-family="-apple-system, sans-serif" font-size="13" fill="#f8fafc">Motor Speed: <tspan font-family="monospace" font-weight="700" fill="#38bdf8">1,450 RPM</tspan> | IOPS: <tspan font-weight="700" fill="#10b981">0x80 (GOOD)</tspan></text>
+  </g>
+
+  <!-- Bottom Panel: DCP Discovery Dissection -->
+  <rect x="30" y="620" width="1140" height="150" rx="10" fill="url(#pnCard)" stroke="#1e293b" stroke-width="1"/>
+  <text x="50" y="645" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#ffffff">DCP (Discovery &amp; basic Configuration Protocol) Multi-Device Mapping</text>
+
+  <g transform="translate(50, 665)">
+    <!-- Node 1 -->
+    <rect x="0" y="0" width="260" height="42" rx="6" fill="#0284c7"/>
+    <text x="130" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">simatic-s7-1500 (192.168.1.10)</text>
+
+    <!-- Node 2 -->
+    <rect x="280" y="0" width="260" height="42" rx="6" fill="#0f766e"/>
+    <text x="410" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">et200sp-rack1 (192.168.1.20)</text>
+
+    <!-- Node 3 -->
+    <rect x="560" y="0" width="260" height="42" rx="6" fill="#0f766e"/>
+    <text x="690" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">sinamics-s120 (192.168.1.30)</text>
+
+    <!-- Node 4 -->
+    <rect x="840" y="0" width="250" height="42" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="965" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle">festo-valve-cpx (192.168.1.40)</text>
+  </g>
+
+  <g transform="translate(50, 730)" font-family="monospace" font-size="11" fill="#94a3b8">
+    <text x="0" y="15">DCP Multicast MAC: 01:0E:CF:00:00:00</text>
+    <text x="350" y="15">Service ID: 0x05 (IDENTIFY REQUEST / RESPONSE)</text>
+    <text x="750" y="15">Vendor ID: 0x002A (Siemens AG) / 0x014D (Festo)</text>
+  </g>
+</svg>
